@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+:root {
+  --pale-blue: hsl(225, 100%, 94%); 
+  --bright-blue: hsl(245, 75%, 52%); 
+  --very-pale-blue: hsl(225, 100%, 98%); 
+  --desaturated-blue: hsl(224, 23%, 55%); 
+  --dark-blue: hsl(223, 47%, 23%); 
+}
+
+* {
+  margin: 0; 
+  padding: 0; 
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Red Hat Display', sans-serif;
+  background-color: var(--pale-blue);
+}
+
+.main-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-container {
+  width: 320px; 
+  background-color: white; 
+  position: fixed; 
+  top: 50%; 
+  left: 50%; 
+  transform: translate(-50%, -50%); 
+  border-radius: 1rem;
+}
+
+.card-container .hero {
+  width: 100%;
+  border-radius: 1rem;
+}
+
+.card-container .hero img {
+  width: 100%;
+  border-radius: 1rem 1rem 0 0;
+}
+
+.summary {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.summary .text {
+  width: 80%;
+}
+
+.summary .heading {
+  margin: 1.5rem auto; 
+  font-size: 1.5rem;
+  color: var(--dark-blue); 
+  text-align: center;
+}
+
+.summary .desc {
+  text-align: center;
+  margin-bottom: 1.3rem;
+  color: var(--desaturated-blue); 
+  font-size: 16px;
+}
+
+.selected-plan {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: auto; 
+  background-color: var(--very-pale-blue);
+  width: 85%; 
+  border-radius: 0.7rem;
+  padding: 1rem; 
+}
+
+.selected-plan .icon {
+  flex: 3; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.selected-plan .icon img {
+  background-color: var(--pale-blue);
+  border-radius: 50%;
+}
+
+.selected-plan .plan {
+  flex: 6; 
+  display: flex;
+  flex-direction: column;
+  font-size: 14px;
+  padding-left: 0.8rem 1rem;
+  margin-left: 1rem;
+}
+
+.selected-plan .plan .plan-type {
+  font-weight: bold;
+}
+
+.selected-plan .plan .price {
+  color: var(--desaturated-blue); 
+  font-size: 14px;
+}
+
+.selected-plan .change {
+  flex: 3; 
+  display: flex;
+  font-size: 14px;
+  font-weight: bold;
+  margin-left: 2rem;
+}
+
+.confirm {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 85%; 
+  margin-top: 0.5rem;
+}
+
+.confirm .payment {
+  background-color: var(--bright-blue);
+  color: white; 
+  padding: 1rem; 
+  margin: 1rem auto; 
+  width: 100%; 
+  border: none; 
+  outline: none; 
+  border-radius: 0.7rem;
+  font-weight: bold;
+  font-size: 15px; 
+}
+
+.confirm a {
+  text-decoration: none;
+  color: var(--desaturated-blue); 
+  margin-bottom: 1.5rem;
+  font-weight: bold;
+}
